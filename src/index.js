@@ -16,7 +16,8 @@ import stores from './stores/index';
 import routes from './routes.jsx';
 import global from './common/global';
 
-
+import { rehydrate, hotRehydrate } from "rfx-core";
+const store = rehydrate();
 // Render
 //const history = syncHistoryWithStore(hashHistory, store);
 
@@ -24,7 +25,7 @@ const rootEl =document.getElementById('app');
 
 window.$=$;
 ReactDom.render(
-    <Provider {...stores}>
+    <Provider store={store}>
       <Router routes={routes}  history={hashHistory}/>
     </Provider>
      , rootEl);

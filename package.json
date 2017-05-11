@@ -89,6 +89,7 @@
     "react-router": "2.6.0",
     "mobx": "^2.0.0",
     "mobx-react": "^3.0.0",
+    "rfx-core": "^1.5.3",
     "reselect": "2.5.3",
     "swiper": "3.3.1",
     "mockjs": "^1.0.1-beta3"

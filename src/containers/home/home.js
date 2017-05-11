@@ -1,17 +1,24 @@
 
 import React, { Component, PropTypes } from 'react';
+import { inject, observer } from "mobx-react";
 import { createSelector } from 'reselect';
 import util from '../../common/util';
 import styles from '../../styles/less/home.less';
+import stores from '../../stores/index';
 
+// @inject("homestate")
+@observer
 class AppComponent extends React.Component {
   constructor(props) {
     super(props);
-    this.search = this.search.bind(this);
+    debugger
   }
   search() {
     // const { dispatch } = this.props;
     // dispatch({type: GET_DATA_REQUESTED})
+  }
+  componentDidMount() {
+    debugger
   }
   render() {
     return (

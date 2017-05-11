@@ -1,5 +1,7 @@
-import table from './table.js'
+import { store } from "rfx-core";
 
-const stores = {table}
+import HomeState from "./HomeState";
 
-export default stores
+export default store.setup({
+	homeState: HomeState
+});
